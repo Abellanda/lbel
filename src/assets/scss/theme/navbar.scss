@@ -1,0 +1,69 @@
+nav {
+    background: #FFFFFF;
+    color: #333333;
+    width: 100%;
+    height: 90px;
+    line-height: 90px;
+    @media #{$medium-and-down} {
+    	height: 60px;
+    	line-height: 90px;
+    }
+    img.logotipo {
+    	max-width: 90px;
+    	padding: 35px 0 0 0;
+    	@media #{$medium-and-down} {
+    	    max-width: 60px;
+    	    margin: 10px;
+    	  }
+    }
+    ul li a {
+        color: #333333;
+    	font-size: 0.9rem;
+    	text-transform: uppercase;
+        transition: all 0.5s ease;
+    }
+}
+nav ul a:hover {
+    background-color: rgba(0,0,0,0);
+}
+.nav-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.proximas-clases {
+    background: red;
+    height: 35px;
+    line-height: 35px;
+    margin-top: 25px;
+    margin-left: 25px;
+    border-radius: 5px;
+    a {
+        color: #FFFFFF;
+    }
+}
+
+nav ul a {
+    @media (max-width: 1080px) {
+        padding: 0 10px;
+    }
+}
+ul#mobile-menu {
+    padding: 40px 0;
+}
+ul#mobile-menu li.proximas-clases {
+    margin: 0;
+    text-align: center;
+    height: 40px;
+    border-radius: 0;
+    line-height: 40;
+    a {
+        line-height: 40px;
+    }
+}
+
+ul.vertical.nested.menu {
+    padding: 0 20px;
+}

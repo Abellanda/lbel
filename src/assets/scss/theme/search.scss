@@ -1,0 +1,25 @@
+div#search-box {
+    width: 100%;
+    right: 0px;
+    position: absolute;
+    z-index: 99999;
+    background: #FFFFFF;
+    padding: 0 60px;
+    display: none;
+    @media #{$medium-and-down} {
+    	padding: 0 10px;
+    }
+    #form-search {
+    	#search-close {
+    		cursor: pointer;
+    		float: right;
+    		margin: 0 5px;
+    	}
+    }
+    form#searchform .input-group {
+    	display: flex;
+    	flex-flow: row nowrap;
+    	align-items: center;
+    	justify-content: center;
+    }
+}

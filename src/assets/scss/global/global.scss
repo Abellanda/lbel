@@ -1,0 +1,107 @@
+body, html {
+	transition: all 0.5s ease;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Open Sans';
+	font-weight: 800;
+	span {
+		color: #FFFFFF;
+		-webkit-text-fill-color: #FFFFFF;
+	  -webkit-text-stroke-width: 1px;
+	  -webkit-text-stroke-color: black;
+	}
+}
+h1 {
+	font-size: 3rem;
+} 
+h2 { 
+	font-size: 2.76rem;
+} 
+h3 { 
+	font-size: 2.36rem; 
+}
+h4 { 
+	font-size: 1.96rem; 
+}
+h5 { 
+	font-size: 1.32rem;
+}
+h6 { 
+	font-size: 0.9rem; 
+}
+a, 
+p,
+ul li {
+	font-family: 'Open Sans';
+	font-weight: 300;
+}
+a,
+a i {
+	transition: all 0.5s ease;
+	&:hover {
+		color: #FCDA4F;
+	}
+}
+p {
+	text-align: justify;
+}
+article {
+	 header {
+	 	text-align: center;
+	 	text-transform: uppercase;
+	 }
+}
+body.page-template {
+	.main-content {
+		margin: 100px 0 0 0;
+	}
+}
+h1.entry-title {
+    font-size: 2.7rem;
+    margin: 60px 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+input[type="submit"],
+.submit {
+	padding: 10px 20px;
+	border: 0 solid #000000;
+	box-shadow: none;
+	color: #FFFFFF;
+	background: #000000;
+	transition: all 0.5s ease;
+	&:hover {
+		background: #FCDA4F;
+	}
+}
+#wpcf7-f152-p10-o1 {
+	margin: 0 auto;
+	max-width: 600px;
+}
+input.wpcf7-form-control.wpcf7-submit {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #000000;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    &:hover {
+    	background: #FCDA4F;
+    }
+}
+.btn, .btn-large, .btn-small {
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #000000;
+    text-align: center;
+    letter-spacing: .5px;
+    transition: background-color .2s ease-out;
+    cursor: pointer;
+    &:hover {
+    	background: #04589F;
+    	color: #FFFFFF;
+    }
+}
+
+

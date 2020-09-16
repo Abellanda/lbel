@@ -1,10 +1,6 @@
 <?php get_header(); ?>
 
 <main class="blog-container">
-
-	  <?php if(is_home()) { ?>
-	  	<h1 class="entry-title">Foro de <span>discusión</span></h1>
-	  <?php } ?>
 		
 		<?php if ( have_posts() ) : ?>
 

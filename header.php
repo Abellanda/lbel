@@ -31,7 +31,7 @@
 			<nav>
 		    <div class="nav-wrapper">
 		    	<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-		    		<img class="logotipo" src="https://blablarte.com/wp-content/uploads/2020/07/INSTAGRAM.png" alt="<?php bloginfo( 'name' ); ?>">
+		    		<img class="logotipo" src="#" alt="<?php bloginfo( 'name' ); ?>">
 		    	</a>
 		      <?php site_top_bar_r(); ?>
 
@@ -42,10 +42,10 @@
 		      <?php site_ecommerce_nav(); ?>
 
 		      <?php //start cart count and link in header ?>
-		      <?php if ( WC()->cart->get_cart_contents_count() !== 0 ) { ?>  
+		      <?php /*if ( WC()->cart->get_cart_contents_count() !== 0 ) { ?>  
               <a class="cart-contents" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php echo sprintf ( _n( '%d ', '%d ', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?>
               </a>
-		      <?php } ?>
+		      <?php } */?>
 		      <?php //end cart count and link in header ?>
 
 		      <span class="right hide-on-large-only text-darken-1">

@@ -38,6 +38,9 @@ if ( ! function_exists( 'site_scripts' ) ) :
 
 		// Enqueue the main Stylesheet.
 		wp_enqueue_style( 'main-stylesheet', get_stylesheet_directory_uri() . '/dist/assets/css/' . site_asset_path( 'app.min.css' ), array(), '1.0.0', 'all' );
+		
+		// Enqueue the custom Stylesheet.
+		wp_enqueue_style( 'stylesheet', get_stylesheet_directory_uri() . '/dist/assets/css/' . site_asset_path( 'custom.css' ), array(), '1.0.0', 'all' );
 
 		// Deregister the jquery version bundled with WordPress.
 		wp_deregister_script( 'jquery' );

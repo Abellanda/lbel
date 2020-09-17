@@ -1,0 +1,97 @@
+/* countdown timer **/
+.countdown-container {
+  margin: 100px 0 0 0;
+}
+#countdown {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+#countdown #countdown-message p {
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+#countdown #countdown-numbers span#days,
+#countdown #countdown-numbers span#hours,
+#countdown #countdown-numbers span#minutes {
+  color: #000000;
+}
+#countdown #countdown-numbers span#seconds {
+  color: #000000;
+}
+#countdown #countdown-numbers span.text-countdown {
+  font-size: 9px;
+}
+#countdown #countdown-message p {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+#countdown #countdown-numbers {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+#countdown #countdown-numbers span#days,
+#countdown #countdown-numbers span#hours,
+#countdown #countdown-numbers span#minutes,
+#countdown #countdown-numbers span#seconds {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+}
+#countdown #top-close {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  position: absolute;
+  right: 40px;
+  cursor: pointer;
+}
+@media (min-width: 769px) {
+  #countdown {
+  }
+  #countdown #countdown-numbers span {
+    font-size: 35px;
+  }
+  #countdown #countdown-message p {
+    font-size: 20px;
+  }
+  #countdown #countdown-message img {
+    width: 70px;
+    margin: 5px 15px;
+  }
+  .space {
+    padding-top: 70px;
+  }
+}
+@media (max-width: 768px) {
+  #countdown #countdown-message p {
+    font-size: 12px;
+    padding: 5px;
+  }
+  #countdown #countdown-message img {
+    width: 40px;
+    margin: 5px;
+  }
+  #countdown #countdown-numbers span {
+    font-size: 14px;
+  }
+  #countdown #top-close {
+    right: 20px;
+  }
+  .space {
+    padding-top: 115px;
+  }
+  .action.nav-toggle::before {
+    z-index: 1;
+  }
+}
+/* end countdown timer **/

@@ -1,10 +1,12 @@
+if(document.URL.indexOf("index.php/countdown/") >= 0){ 
+
 function countdown(endDate) {
   let days, hours, minutes, seconds;
   
   endDate = new Date(endDate).getTime();
   
   if (isNaN(endDate)) {
-	return;
+  return;
   }
   
   setInterval(calculate, 1000);
@@ -40,3 +42,5 @@ function countdown(endDate) {
 (function () { 
   countdown('10/01/2020 11:59:00 PM'); 
 }());
+
+}

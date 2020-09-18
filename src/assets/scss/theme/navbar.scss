@@ -19,7 +19,6 @@ nav {
     ul li a {
         color: #333333;
     	font-size: 0.9rem;
-    	text-transform: uppercase;
         transition: all 0.5s ease;
     }
 }
@@ -66,4 +65,24 @@ ul#mobile-menu li.proximas-clases {
 
 ul.vertical.nested.menu {
     padding: 0 20px;
+}
+
+div#nav-wrapper-ecommerce {
+    position: fixed;
+    right: 60px;
+    top: 150px;
+    ul#menu-e-commerce-menu li {
+        width: 45px;
+        height: 45px;
+        background: #cccccc;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0;
+        border-radius: 90%;
+        a {
+            color: #000000;
+        }
+    }
 }

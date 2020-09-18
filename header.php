@@ -30,23 +30,23 @@
 		<div class="navbar-fixed">
 			<nav>
 		    <div class="nav-wrapper">
-		    	<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-		    		<img class="logotipo" src="#" alt="<?php bloginfo( 'name' ); ?>">
-		    	</a>
+		    	<div class="icon-wrapper">
+		    		<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+		    			<img class="logotipo" src="http://35.239.4.49/wp-content/uploads/2020/09/rectangle.png" alt="<?php bloginfo( 'name' ); ?>" width="70">
+		    		</a>
+		    		<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+		    			<img class="logotipo" src="http://35.239.4.49/wp-content/uploads/2020/09/rectangle.png" alt="<?php bloginfo( 'name' ); ?>" width="70">
+		    		</a>
+		    		<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+		    			<img class="logotipo" src="http://35.239.4.49/wp-content/uploads/2020/09/rectangle.png" alt="<?php bloginfo( 'name' ); ?>" width="70">
+		    		</a>
+		    	</div>
+
 		      <?php site_top_bar_r(); ?>
 
-          <a href="https://blablarte.com/carrito/">
-            <i id="cart-mobile" class="material-icons show-on-medium-and-down hide-on-med-and-up">shopping_basket</i>
-          </a>
-
-		      <?php site_ecommerce_nav(); ?>
-
-		      <?php //start cart count and link in header ?>
-		      <?php /*if ( WC()->cart->get_cart_contents_count() !== 0 ) { ?>  
-              <a class="cart-contents" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php echo sprintf ( _n( '%d ', '%d ', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?>
-              </a>
-		      <?php } */?>
-		      <?php //end cart count and link in header ?>
+		      <!-- a href="https://http://35.239.4.49/carrito/">
+		        <i id="cart-mobile" class="material-icons show-on-medium-and-down hide-on-med-and-up">shopping_basket</i>
+		      </a -->
 
 		      <span class="right hide-on-large-only text-darken-1">
 		        <i class="material-icons sidenav-trigger" data-target="mobile-menu">menu</i>
@@ -67,4 +67,15 @@
         <?php echo get_search_form(); ?>
       </div>
 	  </div>
+
+    <div id="nav-wrapper-ecommerce">
+    	<?php //start cart count and link in header ?>
+    	<?php if ( WC()->cart->get_cart_contents_count() !== 0 ) { ?>  
+    	    <a class="cart-contents" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php echo sprintf ( _n( '%d ', '%d ', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?>
+    	    </a>
+    	<?php } ?>
+    	<?php //end cart count and link in header ?>
+      <?php site_ecommerce_nav(); ?>
+    </div>
+
 		

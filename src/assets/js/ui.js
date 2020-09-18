@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
   let searchOpen = document.getElementById('search-open');
   let searchClose = document.getElementById('search-close');
 
-  searchOpen.addEventListener('click', (e) => {
+  /* searchOpen.addEventListener('click', (e) => {
     e.preventDefault();
     searchBox.style.display = 'block';
   });
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
   searchClose.addEventListener('click', (e) => {
     e.preventDefault();
     searchBox.style.display = 'none';
-  });
+  }); **/
 
   
 });

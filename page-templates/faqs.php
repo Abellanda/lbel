@@ -4,52 +4,32 @@ Template Name: Faqs
 */
 get_header(); ?>
 
-<?php get_template_part( 'template-parts/featured-image' ); ?>
-
 <main class="main-content">
 
 	<div class="container">
-		<?php while ( have_posts() ) : the_post(); ?>	
 
-			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-				<header>
-					<h1 class="entry-title"><?php the_title(); ?></h1>
-				</header>
+		<header>
+			<h1 class="entry-title">Faqs</h1>
+		</header>
 
-						<ul class="collapsible">
-				    <li>
-				      <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
-				      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-				    </li>
-				    <li>
-				      <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
-				      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-				    </li>
-				    <li>
-				      <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-				      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-				    </li>
-				  </ul>
+		<ul class="collapsible">
+			<?php
+			$args = array( 'post_type' => 'faqs', 'posts_per_page' => -1 );
+			$loop = new WP_Query( $args );
+			while ( $loop->have_posts() ) : $loop->the_post();
+			?>
 
-				<div class="entry-content">
-					<?php the_content(); ?>
-					<?php edit_post_link( __( '(Edit)', 'foundationpress' ), '<span class="edit-link">', '</span>' ); ?>
-				</div>
-				<footer>
-					<?php
-						wp_link_pages(
-							array(
-								'before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'foundationpress' ),
-								'after'  => '</p></nav>',
-							)
-						);
-					?>
-					<?php $tag = get_the_tags(); if ( $tag ) { ?><p><?php the_tags(); ?></p><?php } ?>
-				</footer>
-			</article>
-	</div>
+						<li id="post-<?php the_ID(); ?>" class="article-blog">
+							<div class="collapsible-header"><i class="material-icons">filter_drama</i> <?php the_title(); ?></div>
+				      <div class="collapsible-body"><span><?php the_content(); ?></span></div>
+						</li>
 
-<?php endwhile;?>
+				<?php endwhile; ?>
+				
+		</ul><!-- //colapsible -->
+	
+	</div><!-- //container -->
+
 </main>
 
 <?php get_footer();

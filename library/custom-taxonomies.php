@@ -35,20 +35,20 @@ function slider_init() {
 }
 
 // La función no será utilizada antes del 'init'.
-add_action( 'init', 'videos_init' );
+add_action( 'init', 'faqs_init' );
 /* Here's how to create your customized labels */
-function videos_init() {
+function faqs_init() {
   $labels = array(
-  'name' => _x( 'Videos', 'post type general name' ),
-        'singular_name' => _x( 'Videos', 'post type singular name' ),
-        'add_new' => _x( 'Añadir nuevo', 'Video' ),
-        'add_new_item' => __( 'Añadir nuevo Video' ),
-        'edit_item' => __( 'Editar Video' ),
-        'new_item' => __( 'Nuevo Video' ),
-        'view_item' => __( 'Ver Video' ),
-        'search_items' => __( 'Buscar Video' ),
-        'not_found' =>  __( 'No se han encontrado videos' ),
-        'not_found_in_trash' => __( 'No se han encontrado videos en la papelera' ),
+  'name' => _x( 'Faqs', 'post type general name' ),
+        'singular_name' => _x( 'Faqs', 'post type singular name' ),
+        'add_new' => _x( 'Añadir nuevo', 'Faq' ),
+        'add_new_item' => __( 'Añadir nuevo Faq' ),
+        'edit_item' => __( 'Editar Faq' ),
+        'new_item' => __( 'Nuevo Faq' ),
+        'view_item' => __( 'Ver Faq' ),
+        'search_items' => __( 'Buscar Faq' ),
+        'not_found' =>  __( 'No se han encontrado Faqs' ),
+        'not_found_in_trash' => __( 'No se han encontrado Faqs en la papelera' ),
         'parent_item_colon' => ''
     );
  
@@ -66,7 +66,7 @@ function videos_init() {
         'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' )
     );
  
-    register_post_type( 'videos', $args ); /* Registramos y a funcionar */
+    register_post_type( 'faqs', $args ); /* Registramos y a funcionar */
 }
 
 ?>

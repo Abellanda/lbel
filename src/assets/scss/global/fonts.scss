@@ -1,1 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+@font-face {
+    font-family: 'lbelscript';
+    src: url('http://35.239.4.49/wp-content/themes/lbel/dist/assets/css/fonts/lbelscript-webfont.woff2') format('woff2'),
+         url('http://35.239.4.49/wp-content/themes/lbel/dist/assets/css/fonts/lbelscript-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'polaris_book';
+    src: url('http://35.239.4.49/wp-content/themes/lbel/dist/assets/css/fonts/polaris-book-webfont.woff2') format('woff2'),
+         url('http://35.239.4.49/wp-content/themes/lbel/dist/assets/css/fonts/polaris-book-webfont.woff') format('woff');
+         font-weight: normal;
+         font-style: normal;
+}
+@font-face {
+    font-family: 'polaris_bookitalic';
+    src: url('http://35.239.4.49/wp-content/themes/lbel/dist/assets/css/fonts/polaris-bookitalic-webfont.woff2') format('woff2'),
+         url('http://35.239.4.49/wp-content/themes/lbel/dist/assets/css/fonts/polaris-bookitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'polaris_bold';
+    src: url('http://35.239.4.49/wp-content/themes/lbel/dist/assets/css/fonts/polaris-bold-webfont.woff2') format('woff2'),
+         url('http://35.239.4.49/wp-content/themes/lbel/dist/assets/css/fonts/polaris-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: bold;
+
+}
+@font-face {
+    font-family: 'polaris_light';
+    src: url('http://35.239.4.49/wp-content/themes/lbel/dist/assets/css/fonts/polaris-light-webfont.woff2') format('woff2'),
+         url('http://35.239.4.49/wp-content/themes/lbel/dist/assets/css/fonts/polaris-light-webfont.woff') format('woff');
+    font-weight: thin;
+    font-style: thin;
+}
+@font-face {
+    font-family: 'polaris_medium';
+    src: url('http://35.239.4.49/wp-content/themes/lbel/dist/assets/css/fonts/polaris-medium-webfont.woff2') format('woff2'),
+         url('http://35.239.4.49/wp-content/themes/lbel/dist/assets/css/fonts/polaris-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

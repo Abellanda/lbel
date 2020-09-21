@@ -1,3 +1,8 @@
+/* Estilos Lbel */
+body {
+	background: url(/wp-content/uploads/2020/09/bg.jpg);
+	background-position: top center;
+}
 /* countdown timer **/
 .countdown-container {
   margin: 100px 0 0 0;
